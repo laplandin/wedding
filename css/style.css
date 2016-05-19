@@ -1,12 +1,55 @@
 body {
-  width: 1228px;
-  margin: 0 auto;
-
 
 }
 .slider {
-
   height: 100vh;
   background: url(../img/slider/1min.jpg)  center no-repeat;
   background-size: cover;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  background: rgba(0, 255, 255, 0.5);
+  /*ширина макета 1170*/
+}
+
+.content-wrapper {
+  height: 138px;
+  width: 100%;
+  background: white;
+}
+.annotation-wrapper {
+  height: 381px;
+  width: 100%;
+  background: url(../img/wedding-rings-gradient.png) center no-repeat;
+}
+.parallax-wrapper {
+  height: 268px;
+  width:100%;
+  background-color: #7a5d4d;
+}
+.definition-wrapper {
+  height: 327px;
+  width: 100%;
+  background-color: #79a79b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  height: 616px;
+  width: 100%;
+  /*background: url(../img/wedding-1017239_1920.jpg) center no-repeat;
+  background-size: cover; ????????*/
 }
