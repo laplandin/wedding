@@ -73,6 +73,9 @@ body {
 }
 .about-slider-him, .about-slider-her {
   height: 175px;
+  padding-left: 15px;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 .about input {
   display: none;
@@ -112,7 +115,22 @@ body {
 #next:checked ~ .about-slides {
   transform: translateY(-175px);
 }
-
+.portrait {
+  display: inline-block;
+  max-width: 10%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+.box h6 {
+  padding: 0;
+  margin: 0;
+}
+.box {
+  max-width: 80%;
+  float: left;
+  /*background-color: black;*/
+}
 
 
 
