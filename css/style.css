@@ -12,6 +12,11 @@ body {
   background: rgba(0, 255, 255, 0.5);
   /*ширина макета 1170*/
 }
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
 
 .content-wrapper {
   height: 138px;
@@ -28,10 +33,84 @@ body {
   width:100%;
   background-color: #7a5d4d;
 }
+.about-wrapper {
+  height: 430px;
+  width: 100%;
+  padding-top: 155px;
+  background-color: white;
+  box-sizing: border-box;
+}
 .definition-wrapper {
   height: 327px;
   width: 100%;
   background-color: #79a79b;
+}
+.about {
+  font-size: 0;
+}
+.about-us {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  font-size: 14px;
+  background: rgba(50, 50, 59, 0.5);
+}
+.about-slider {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  height: 175px;
+  overflow: hidden;
+  font-size: 14px;
+  background: rgba(0, 100, 50, 0.5);;
+}
+.about-slides {
+  width: 100%;
+  height: 350px;
+  transition: transform 0.8s ease;
+}
+.about-slider-him, .about-slider-her {
+  height: 175px;
+}
+.about input {
+  display: none;
+}
+.slider-control {
+  background: #bbb;
+}
+.about label {
+  position: absolute;
+  z-index: 200;
+  bottom:10px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  background: #79a79b;
+}
+.about label:first-child {
+  right: 40px;
+  background-image: url(../img/prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about label:last-child {
+  right: 10px;
+  background-image: url(../img/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#prev:checked ~ .slider-control label[for="prev"],
+#next:checked ~ .slider-control label[for="next"]  {
+  background-color: #c0c0c0;
+}
+#prev:checked ~ .about-slides {
+  transform: translateY(0);
+
+}
+#next:checked ~ .about-slides {
+  transform: translateY(-175px);
 }
 
 
@@ -42,11 +121,9 @@ body {
 
 
 
-
-
-
-
-
+.definition {
+  text-align: center;
+}
 footer {
   height: 616px;
   width: 100%;
