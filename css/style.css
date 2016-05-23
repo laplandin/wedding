@@ -22,7 +22,7 @@ body {
   background-size: cover;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   background: rgba(0, 255, 255, 0.5);
   /*ширина макета 1170*/
@@ -114,8 +114,11 @@ body {
 }
 .parallax {
   height: 268px;
-  background: url(../img/cutlery-1375780_1920.jpg) center no-repeat;
-
+  /*background-color: black;*/
+  background-image: url(../img/параллакс.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 .about {
   display: flex;
