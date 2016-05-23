@@ -5,6 +5,7 @@
   <title>Wedding</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
   </head>
 <body>
   <div class="slider">
@@ -15,7 +16,7 @@
         <img src="img\logo.png" alt="Денис и Ксения">
       </div>
       <div class="timer container">
-        <p>Coming soon...</p>
+        <p>" Coming <span>soon...</span> "</p>
         <div class="timer days">
 
         </div>
@@ -30,33 +31,33 @@
     </div>
 
   <main class="content">
-    <div class="content-wrapper">
+    <div class="social-wrapper">
       <div class="social container">
         <ul>
-          <li><a class="social-icon social-vk" href="#"></a></li>
-          <li><a class="social-icon social-google" href="#"></a></li>
-          <li><a class="social-icon social-photo" href="#"></a></li>
-          <li><a class="social-icon social-video" href="#"></a></li>
+          <li><a class="social-icon social-vk-him" href="http://vk.com/id15290535">vk</a></li>
+          <li><a class="social-icon social-vk-her" href="http://vk.com/id95440802">vk</a></li>
+          <li><a class="social-icon social-photo" href="#">photo</a></li>
+          <li><a class="social-icon social-video" href="#">video</a></li>
         </ul>
       </div>
     </div>
     <div class="annotation-wrapper">
       <div class="annotation container">
         <article class="annotation-what">
-          <h3 class="annotation-header">Что</h3>
+          <h3 class="annotation-header">.Что</h3>
           <p class="annotation-text">Свадьба! Не больше и не меньше. С бросанием букетов, катанием по
             городу, фотографирафированием, горячительными напитками и сытным
             столом.</p>
           <a href="" class="btn">Подробнее</a>
         </article>
         <article class="annotation-where">
-          <h3 class="annotation-header">Где</h3>
+          <h3 class="annotation-header">.Где</h3>
           <p class="annotation-text">В самом центре города, чтобы все видели!
             Банкетный зал ресторана "Атташе" распахнет свои двери точно в назначенный час</p>
           <a href="" class="btn">Подробнее</a>
         </article>
         <article class="annotation-when">
-          <h3 class="annotation-header">Когда</h3>
+          <h3 class="annotation-header">.Когда</h3>
           <p class="annotation-text">Следите за таймером! Просьба не опаздывать,
             тогда мы тоже придем вовремя</p>
           <a href="" class="btn">Подробнее</a>
@@ -66,14 +67,24 @@
 
     <div class="parallax-wrapper">
       <div class="parallax container">
-        <img src="" alt="Параллакс">
+        <div class="parallax__group">
+          <div class="parallax__layer parallax__layer--back">
+            ...
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+            ...
+          </div>
+        </div>
+        <div class="parallax__group">
+          ...
+        </div>
       </div>
     </div>
 
      <div class="about-wrapper">
-      <div class="about container clearfix">
+      <div class="about container">
         <div class="about-us">
-          <h2 class="about-us-header">-Кто мы такие</h2>
+          <h2 class="about-us-header">- Кто мы такие</h2>
           <p class="about-us-text">Мы - виновники торжества. Мы - те, кто отважился порвать
           с искрящим весельем молодости, устроив напоследок взрыв веселья. Мы предлагаем
           Вам присоединиться. Будет весело</p>
@@ -82,7 +93,7 @@
           <input type="radio" name="slider-control" id="prev" checked="">
           <input type="radio" name="slider-control" id="next">
          <div class="about-slides">   <!--двигаемый контейнер с дивами -->
-            <div class="about-slider-him clearfix">
+            <div class="about-slider-him">
               <img class="portrait" src="img/U4wfZ8sK5TE.jpg" alt="Жених" class="him">
               <!-- опционально увеличение фото при клике и обратно -->
               <div class="box">
@@ -91,7 +102,7 @@
                 Особенность: начинает петь сразу после третьей чарки</p>
               </div>
             </div>
-            <div class="about-slider-her clearfix">
+            <div class="about-slider-her">
               <img class="portrait" src="img/kseniya.jpg" alt="Невеста" class="her">
               <div class="box">
                 <h6 class="her-header">Ксения будущая Лапландина</h6>
@@ -123,7 +134,7 @@
      <div class="definition-wrapper">
       <div class="definition container">
         <!-- можно добавить иконку -->
-        <h2 class="definition-header">-Ликбез</h2>
+        <h2 class="definition-header">.Ликбез</h2>
         <p class="definition-text"> Свадьба - это обряды, сопровождающие заключение брака.
           У многих народов свадьба включает ритуальный переезд невесты из дома
           родителей в дом жениха, обмен подарками, пир и т. д.
@@ -135,7 +146,8 @@
     </div>
 
   </main>
-  <footer>
+  <footer >
+
         <!-- Фоновое изображение + прогрессивно форма для поп-апа с приглашением -->
   </footer>
 

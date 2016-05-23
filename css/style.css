@@ -1,5 +1,20 @@
 body {
-
+  font-family: 'ralewaylight', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+}
+.timer p {
+  font-family: 'ralewaymedium', 'Arial', sans-serif;
+  font-size: 38px;
+  line-height: 25px;
+  color: white;
+}
+.timer p span {
+  font-family: 'ralewaybold', 'Arial', sans-serif;
+  font-size: 38px;
+  line-height: 25px;
+  color: white;
 }
 .slider {
   height: 100vh;
@@ -18,52 +33,125 @@ body {
   clear: both;
 }
 
-.content-wrapper {
-  height: 138px;
+.social-wrapper {
+  height: auto;
   width: 100%;
   background: white;
+  overflow: auto;
 }
 .annotation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 381px;
   width: 100%;
   background: url(../img/wedding-rings-gradient.png) center no-repeat;
+  background-size: cover;
+  overflow: auto;
 }
 .parallax-wrapper {
+  display: flex;
+  align-items: center;
   height: 268px;
   width:100%;
   background-color: #7a5d4d;
+  overflow: auto;
 }
 .about-wrapper {
+  display: flex;
+  align-items: center;
   height: 430px;
   width: 100%;
-  padding-top: 155px;
+  /*padding-top: 155px;*/
   background-color: white;
   box-sizing: border-box;
+  overflow: auto;
 }
 .definition-wrapper {
+  display: flex;
+  align-items: center;
   height: 327px;
   width: 100%;
+  overflow: auto;
   background-color: #79a79b;
 }
+.social {
+  text-align: center;
+}
+.social li {
+  display: inline-block;
+
+}
+.annotation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;;
+}
+.annotation h3 {
+  font-family: 'ralewaybold', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.annotation article {
+  /*width: 30%;*/
+  flex-basis: 250px;
+  flex-grow: 1;
+  padding-right: 22px;
+  /*flex-grow: 1;*/
+  /*background-color: rgba(50, 10, 100, 0.5);*/
+}
+.annotation article a {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: black;
+  font-family: 'ralewaybold', 'Arial', sans-serif;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 23px;
+  color: white;
+  width: auto;
+}
+.parallax {
+  height: 268px;
+  background: url(../img/cutlery-1375780_1920.jpg) center no-repeat;
+
+}
 .about {
-  font-size: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #7a5d4d;
 }
 .about-us {
-  display: inline-block;
-  vertical-align: middle;
+  /*display: inline-block;
+  vertical-align: middle;*/
+  flex-grow: 2;
+  flex-basis: 450px;
   width: 40%;
   font-size: 14px;
   background: rgba(50, 50, 59, 0.5);
 }
+.about-us h2 {
+  font-family: 'ralewaybold', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+}
+.about-slider h6 {
+  font-family: 'ralewaymedium', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 45px;
+}
 .about-slider {
+  flex-grow: 3;
   position: relative;
   z-index: 100;
-  display: inline-block;
-  vertical-align: middle;
+  /*display: inline-block;
+  vertical-align: middle;*/
   width: 60%;
   height: 175px;
   overflow: hidden;
-  font-size: 14px;
+  font-size: 15px;
   background: rgba(0, 100, 50, 0.5);;
 }
 .about-slides {
@@ -72,9 +160,11 @@ body {
   transition: transform 0.8s ease;
 }
 .about-slider-him, .about-slider-her {
+  display: flex;
+  align-items: center;
   height: 175px;
   padding-left: 15px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   box-sizing: border-box;
 }
 .about input {
@@ -126,10 +216,16 @@ body {
   padding: 0;
   margin: 0;
 }
-.box {
-  max-width: 80%;
-  float: left;
-  /*background-color: black;*/
+.definition {
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+.definition h2 {
+  font-family: 'ralewaybold', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+
 }
 
 
@@ -145,6 +241,10 @@ body {
 footer {
   height: 616px;
   width: 100%;
+  background-image: url(../img/wedding-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*background: url(../img/wedding-1017239_1920.jpg) center no-repeat;
   background-size: cover; ????????*/
 }
