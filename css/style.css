@@ -20,6 +20,7 @@ body {
   height: 100vh;
   background: url(../img/slider/1min.jpg)  center no-repeat;
   background-size: cover;
+
 }
 .container {
   width: 1200px;
@@ -43,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 381px;
+  min-height: 381px;
   width: 100%;
   background: url(../img/wedding-rings-gradient.png) center no-repeat;
   background-size: cover;
@@ -291,7 +292,7 @@ footer {
 
 .more-info {
   height: 430px;
-  width: 100%;
+  /*width: 100%;*/
 }
 #yandex-map {
   width: 100%;
