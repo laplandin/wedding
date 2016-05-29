@@ -24,9 +24,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
+<<<<<<< HEAD
   animation-name: slide;
   animation-duration: 15s;
   animation-iteration-count: infinite;
+=======
+>>>>>>> refs/remotes/origin/master
 }
 
 .slider::before,
