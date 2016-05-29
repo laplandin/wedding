@@ -16,12 +16,51 @@ body {
   line-height: 25px;
   color: white;
 }
+
 .slider {
   height: 100vh;
-  background: url(../img/slider/1min.jpg)  center no-repeat;
+  background-color: #7a5d4d;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
+  animation-name: slide;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
 }
+
+.slider::before,
+.slider::after {
+  content: '';
+
+  visibility: hidden;
+}
+
+.slider::before {
+  background-image: url("../img/slider/2min.jpg");
+}
+
+.slider::after {
+  background-image: url("../img/slider/4min.jpg");
+}
+
+@keyframes slide {
+  0%, 10%, 100%
+   {
+    background-image: url("../img/slider/1min.jpg");
+  }
+
+  33%
+   {
+    background-image: url("../img/slider/4min.jpg");
+  }
+
+  66%
+   {
+    background-image: url("../img/slider/2min.jpg");
+  }
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
