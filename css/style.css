@@ -140,11 +140,26 @@ body {
 .social {
   width:auto;
   text-align: center;
+
+  font-size: 0;
 }
+
 .social li {
   display: inline-block;
+  width: 55px;
+  height: 55px;
+  box-sizing: border-box;
 
+  background-color: #cccccc;
+  border-radius: 50%;
+
+  font-size: 14px;
 }
+
+.social li:hover {
+  border: 3px solid #000000;
+}
+
 .annotation {
   display: flex;
   flex-wrap: wrap;
