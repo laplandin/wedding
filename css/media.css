@@ -1,0 +1,201 @@
+@media only screen and (max-device-width:480px) {
+  .slider {
+    min-height: 600px;
+    padding-top:0;
+  }
+  .slider-onAir {
+    padding-top: 0;
+    min-height: 600px;
+    background-color: #7a5d4d;
+    background-image: url(../img/wedding-day-mobile.jpg);
+  }
+  .annotation article::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    /*background-image: url("../img/icons/placeholder-filled-point.svg");
+    background-size: 50px 50px;*/
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+  }
+  .annotation p {
+    text-align: left;
+  }
+
+  #soon {
+    margin-bottom: 82px;
+  }
+
+  .annotation article a {
+    margin-bottom: 14px;
+  }
+  .brown {
+    display: none;
+  }
+  .logo-wrapper, .coming-wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+.logo-name img:last-child {
+  width: 100%;
+  margin-top: 20px;
+}
+ .coming p {
+  font-family: 'ralewaymedium', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.coming p span {
+  font-weight: bold;
+}
+
+  .timer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .timer li {
+    border: 3px solid white;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    /*flex-grow: 2;*/
+    vertical-align: bottom;
+    font-size: 12px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    box-sizing: padding-box;
+
+  }
+  .timer li:nth-child(odd) {
+    margin-right: 45px;
+  }
+
+
+  .timer li span {
+    font-size: 50px;
+    line-height: 72px;
+  }
+
+  .about-slider {
+    margin-top: 15px;
+    height: 350px;
+    padding-bottom: 35px;
+/*    padding-bottom: 30px;
+*/  }
+  .about-slides {
+
+  }
+  #prev:checked ~ .about-slides {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+
+  }
+  #next:checked ~ .about-slides {
+    -webkit-transform: translateY(-385px);
+            transform: translateY(-385px);
+  }
+  .portrait {
+    margin: 0 auto;
+    padding-right: 15px;
+    max-width: 50%;
+  }
+  .about-slider h6 {
+  font-family: 'ralewaymedium', 'Arial', sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+}
+  .about-slider-him, .about-slider-her {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 385px;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0 15px;
+  }
+
+  .box {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  p.him-text, p.her-text {
+    margin: 0;
+  }
+  .about label {
+    position: absolute;
+    z-index: 6;
+    bottom:10px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background: #79a79b;
+  }
+  .definition {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 20px;
+  }
+  .more-what, .more-when {
+    padding: 17px 17px 0 17px;
+    text-align: left;
+  }
+  .what, .when {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /*justify-content: center;*/
+  }
+  .when-image, .what-image {
+    margin: 0 auto;
+    /*margin-top: 17px;*/
+    float: none;
+  }
+  [class*="more"]:not([class*=where]) div {
+    margin: auto;
+  }
+
+  .more-where {
+    display: none;
+  }
+
+  .more-where-mobile {
+    display: block;
+  }
+
+  .where-map-mobile {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 15px 2px #7a5d4d;
+
+    background-image: url('../img/map-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .popup-him, .popup-her {
+    min-width: 150px;
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 150px;
+  }
+  footer {
+    height: 250px;
+    background-image: url(../img/footer-mobile.jpg);
+}

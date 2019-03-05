@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    function min(a,b) {
+      var a=prompt("a",'');
+      var b=prompt("b",'');
+      if a<b {
+        alert(a);
+      } else {
+        alert(b);
+      }
+    }
+    min
+  </script>
+</body>
+
+</html>

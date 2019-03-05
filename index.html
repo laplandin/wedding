@@ -4,49 +4,46 @@
   <meta charset="UTF-8">
   <title>Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7a5d4d">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
   </head>
 <body>
+
   <div class="slider">
-    <div class="slide first-slide"></div>
-    <div class="slide second-slide"></div>
-    <div class="slide third-slide"></div>
-      <div class="logo">
-        <div class="logo-name">
-          <!-- <svg height="300" width="300" class="he">
-            <text x="10" y="72">
-              <tspan x="0" y="72" style="fill:white; font-family: 'rosamunda_tworegular'; font-size: 72px;"> Денис & </tspan>
-              <tspan x="35%" y="144" style="fill:white; font-family: 'rosamunda_tworegular'; font-size: 72px; text-align: left;"> Ксения </tspan>
-          </text>
-          </svg> -->
+      <div class="logo-wrapper">
+        <div class="logo container">
+          <div class="logo-name">
+            <img src="img/logo-names.png" alt="Денис и Ксения">
+            <img src="img/logo-line.png" alt="">
+          </div>
         </div>
-        <img src="img\logo.png" alt="Денис и Ксения">
       </div>
-      <div class="timer container">
-        <p>" Coming <span>soon...</span> "</p>
-        <div class="timer days">
-
+      <div class="coming-wrapper">
+        <div class="coming container">
+          <p>&quot;Coming <span>soon...</span>&quot;</p>
+          <p class="soon" id="soon">&quot;ON <span>AIR</span>&quot;</p>
+          <ul class="timer">
+            <li class="days"><span id="day">27</span><br>days</li>
+            <li class="hours"><span id="hour">15</span><br>hours</li>
+            <li class="minutes"><span id="min">44</span><br>minutes</li>
+            <li class="seconds"><span id="sec">12</span><br>seconds</li>
+          </ul>
         </div>
-        <div class="timer hours">
-
-        </div>
-        <div class="timer minutes">
-
-        </div>
-        <div class="timer seconds"></div>
       </div>
-    </div>
+      <script type="text/javascript" charset="utf-8" src="js/script.js"></script>
+  </div>
 
   <main class="content">
     <div class="social-wrapper">
       <div class="social container">
         <ul>
-          <li><a class="social-icon social-vk-him" href="http://vk.com/id15290535">vk</a></li>
-          <li><a class="social-icon social-vk-her" href="http://vk.com/id95440802">vk</a></li>
-          <li><a class="social-icon social-photo" href="#">photo</a></li>
-          <li><a class="social-icon social-video" href="#">video</a></li>
+          <li><a class="social-icon social-vk-him" href="http://vk.com/id15290535" title="Денис"></a></li>
+          <li><a class="social-icon social-vk-her" href="http://vk.com/id95440802" title="Ксения"></a></li>
+          <li><a class="social-icon social-photo" href="http://vk.com/bakaruk_foto" title="Фотограф"></a></li>
+          <li><a class="social-icon social-video" href="http://vk.com/artlifefilms" title="Видеограф"></a></li>
         </ul>
       </div>
     </div>
@@ -54,27 +51,26 @@
       <div class="annotation container">
         <article class="annotation-article">
           <h3 class="annotation-header">.Что</h3>
-          <p class="annotation-text">Свадьба! Не больше и не меньше. С бросанием букетов, катанием по
-            городу, фотографирафированием, горячительными напитками и сытным
-            столом.</p>
-          <a href="#what" class="btn">Подробнее</a>
+          <p class="annotation-text">Свадьба! Не&nbsp;больше и&nbsp;не&nbsp;меньше. С&nbsp;бросанием букетов, катанием по&nbsp;городу, фотографирафированием, горячительными напитками и&nbsp;сытным
+столом.</p>
+          <a data-scroll="Linear" href="#what" class="btn">Подробнее</a>
         </article>
         <article class="annotation-article">
           <h3 class="annotation-header">.Где</h3>
-          <p class="annotation-text">В самом центре города, чтобы все видели!
-            Банкетный зал ресторана "Атташе" распахнет свои двери точно в назначенный час</p>
-          <a href="#where" class="btn">Подробнее</a>
+          <p class="annotation-text">В&nbsp;самом центре города, чтобы все видели!
+Банкетный зал ресторана &laquo;Атташе&raquo; распахнет свои двери точно в&nbsp;назначенный час</p>
+          <a data-scroll href="#where" class="btn">Подробнее</a>
         </article>
         <article class="annotation-article">
           <h3 class="annotation-header">.Когда</h3>
-          <p class="annotation-text">Следите за таймером! Просьба не опаздывать,
-            тогда мы тоже придем вовремя</p>
-          <a href="#when" class="btn">Подробнее</a>
+          <p class="annotation-text">Следите за&nbsp;таймером! Просьба не&nbsp;опаздывать,
+тогда мы&nbsp;тоже придем вовремя</p>
+          <a data-scroll href="#when" class="btn">Подробнее</a>
         </article>
       </div>
     </div>
 
-    <div class="brown-wrapper">
+    <div class="brown-wrapper brown">
       <div class="parallax container">
         <!-- <div class="parallax__group">
           <div class="parallax__layer parallax__layer-back">
@@ -94,16 +90,16 @@
       <div class="about container">
         <div class="about-us">
           <h2 class="about-us-header">- Кто мы такие</h2>
-          <p class="about-us-text">Мы - виновники торжества. Мы - те, кто отважился порвать
-          с искрящим весельем молодости, устроив напоследок взрыв веселья. Мы предлагаем
-          Вам присоединиться. Будет весело</p>
+          <p class="about-us-text">Мы&nbsp;&mdash; виновники торжества. Мы&nbsp;&mdash; те, кто отважился порвать
+с&nbsp;искрящим весельем молодости, устроив напоследок взрыв веселья. Мы&nbsp;предлагаем
+Вам присоединиться. Будет весело</p>
         </div>
         <div class="about-slider">  <!-- экран слайдера -->
           <input type="radio" name="slider-control" id="prev" checked="">
           <input type="radio" name="slider-control" id="next">
          <div class="about-slides">   <!--двигаемый контейнер с дивами -->
             <div class="about-slider-him">
-              <img class="portrait" src="img/U4wfZ8sK5TE.jpg" alt="Жених" class="him">
+            <img class="portrait js-ava-he" src="img/den-popup.jpg" alt="Жених" class="him">
               <!-- опционально увеличение фото при клике и обратно -->
               <div class="box">
                 <h6 class="him-header">Денис Лапландин</h6>
@@ -112,59 +108,100 @@
               </div>
             </div>
             <div class="about-slider-her">
-              <img class="portrait" src="img/kseniya.jpg" alt="Невеста" class="her">
+              <img class="portrait js-ava-she" src="img/kseniya.jpg" alt="Невеста" class="her">
               <div class="box">
                 <h6 class="her-header">Ксения будущая Лапландина</h6>
-                <p class="him-text">Девушка мечты, ум, страсть и красота в одном флаконе.
-                Особенность: вместо того, чтобы унимать поющего жениха, начинает ему подпевать</p>
+                <p class="him-text">Девушка мечты, ум, страсть и&nbsp;красота в&nbsp;одном флаконе.
+Особенность: вместо того, чтобы унимать поющего жениха, начинает ему подпевать</p>
               </div>
             </div>
-
-          </div>
-
-
+        </div>
           <div class="slider-control">
             <label for="prev"></label>
             <label for="next"></label>
           </div>
         </div>
-
-
-        <!-- <div class="about-slider">
-            <figure class="about-photo">
-              <img src="" width="268" height="164" alt="ФОТО"/>
-            </figure>
-            <button class="btn-photo-back">Назад</button>
-            <button class="btn-photo-next">Вперед</button>
-        </div> -->
       </div>
     </div>
+<div class="overlay" id="overlay">
+
+</div>
+<div class="popup-him">
+  <a href="#" class="close-he">X</a>
+   <img src="img/den-popup.jpg" alt="" />
+</div>
+<div class="popup-her">
+  <a href="#" class="close-her">X</a>
+   <img src="img/kseniya.jpg" alt="" />
+</div>
+
 
      <div class="green-wrapper">
       <div class="definition container">
         <!-- можно добавить иконку -->
         <h2 class="definition-header">.Ликбез</h2>
-        <p class="definition-text"> Свадьба - это обряды, сопровождающие заключение брака.
-          У многих народов свадьба включает ритуальный переезд невесты из дома
-          родителей в дом жениха, обмен подарками, пир и т. д.
-          Со свадьбой у всех народов связано множество поверий, примет и обрядов.
-          У&nbsp;верующих свадьба сопровождается религиозными обрядами (венчание в
-          христианстве, никах в исламе и др.) подробнее
+        <p class="definition-text"> Свадьба&nbsp;&mdash; это обряды, сопровождающие заключение брака.
+У&nbsp;многих народов свадьба включает ритуальный переезд невесты из&nbsp;дома
+родителей в&nbsp;дом жениха, обмен подарками, пир и&nbsp;т.&nbsp;д.
+Со&nbsp;свадьбой у&nbsp;всех народов связано множество поверий, примет и&nbsp;обрядов.
+У&nbsp;верующих свадьба сопровождается религиозными обрядами (венчание в
+христианстве, никах в&nbsp;исламе и&nbsp;др.) подробнее
           <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0" class="definition-wiki">тут</a></p>
       </div>
     </div>
 
-
+<a id="what"></a>
     <div class="white-wrapper">
-      <a name="what"></a>
-    </div>
 
-      <div class="green-wrapper">
-        <a name="when"></a>
+      <div class="more-what container">
+        <div class="what-image">
+          <!-- <img src="img/we-img.jpg" alt=""> -->
+        </div>
+        <p>
+          <span>Что</span> обычно делают влюблённые после продолжительных отношений? Нет, не&nbsp;детей, по&nbsp;крайней мере не&nbsp;в&nbsp;первую очередь!
+Они сперва женятся! Играют свадьбу, зовут родственников и&nbsp;друзей. Бывает, что с&nbsp;драками, бывает без.
+Но&nbsp;всегда с&nbsp;подарками. Со&nbsp;стороны гостей, разумеется. Невесте дарят много цветов. В&nbsp;определенный день и&nbsp;час
+все встречаются в&nbsp;определенном месте и&nbsp;празднуют. <span>Холостые завидуют, женатые сочувствуют</span>.
+
+Так случилось, поняли что пора и&nbsp;вот мы&nbsp;уже собираем гостей. Пожалуй самое оригинальное в&nbsp;нашей свадьбе
+и&nbsp;есть этот сайт-пригласительный, в&nbsp;остальном вас ждет обычный ЗАГС, банальное фотографирование и&nbsp;ресторан,
+<span>необычной эту свадьбу сделаешь именно&nbsp;ты,</span> уважаемый читатель&nbsp;. Ну а&nbsp;раз вы&nbsp;читаете эти строки, значит вы
+скорее всего приглашены на&nbsp;наше торжество, читайте дальше, чтобы узнать когда и&nbsp;где.
+        </p>
+
       </div>
-      <div class="more-info container">
-        <a name="where"></a>
+    </div>
+  <a name="when" id="when"></a>
+      <div class="green-wrapper">
+
+        <div class="more-when container">
+          <div class="when-image">
+            <!-- <img src="img/1.jpg" alt="" /> -->
+          </div>
+          <p>
+            <span>Когда</span> быть готовым к&nbsp;веселью? Весь комплекс мероприятий пройдёт 16&nbsp;июля 2016 года в&nbsp;городе воинской славы Ростове-на-Дону.
+Тайминг нетривиальный и&nbsp;в&nbsp;половине четвертого мы&nbsp;уже сменим свой гражданский статус. Регистрация брака и&nbsp;создание новой здоровой ячейки общества
+произойдет в&nbsp;15-30 (время Ростово-Московское) в&nbsp;ЗАГСе кировского района Ростова-на-Дону (красная отметка на карте),если&nbsp;же Вы&nbsp;не&nbsp;собираетесь лишний раз лить слёзы под марш Мендельсона, а&nbsp;приступить непосредственно к&nbsp;отмечанию,
+то&nbsp;смело берите карту (синяя отметка) и&nbsp;будьте точно в&nbsp;18-00 по&nbsp;указанному там адресу. Вот, что вам понадобится иметь при себе:
+            <ul>
+              <li>Подарок</li>
+              <li>Великолепный внешний вид</li>
+              <li>Отличное настроение, предъявить на входе улыбку</li>
+              <li>Бейдж с адресом, куда доставить тело, если праздник удастся</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <a name="where" id="where"></a>
+      <div class="more-where">
+
         <div class="where-map" id="yandex-map">
+
+        </div>
+      </div>
+      <div class="more-where-mobile">
+
+        <div class="where-map-mobile">
 
         </div>
       </div>
@@ -172,12 +209,15 @@
   </main>
   <footer >
 
+      <h3>by <a href="https://vk.com/id15290535">laplandin</a> & <a href="https://vk.com/id7076917">aleks-y</a></h3>
+
         <!-- Фоновое изображение + прогрессивно форма для поп-апа с приглашением -->
+
   </footer>
+  <script type="text/javascript" charset="utf-8" src="js/smooth-scroll.js"></script>
 
-  <script type="text/javascript" charset="utf-8" src="js/script.js"></script>
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3khwYymrN3bzb20hm_qhrAiiXiXCYqCT&width=100%&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
-
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3khwYymrN3bzb20hm_qhrAiiXiXCYqCT&width=100%&lang=ru_RU&sourceType=constructor&scroll=false&id=yandex-map"></script>
+  <script>smoothScroll.init();</script>
 
 </body>
 </html>

@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/dk-wedding.ru/webstat"
+AuthUserFile /var/www/vh137518/data/etc/32652547.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
